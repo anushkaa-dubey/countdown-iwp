@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Community Event Planner</h1>
+
+  <section class="form-section">
+    <h2>Add New Event</h2>
+    <form id="eventForm">
+      <input type="text" id="eventName" placeholder="Event Name" required />
+      <input type="date" id="eventDate" required />
+      <input type="time" id="eventTime" required />
+      <textarea id="eventDesc" placeholder="Event Description" required></textarea>
+      <button type="submit">Add Event</button>
+    </form>
+  </section>
+
+  <section class="countdown-section">
+    <h2>Next Event Countdown</h2>
+    <div id="countdown">--:--:--</div>
+  </section>
+
+  <section class="events-list">
+    <h2>Upcoming Events</h2>
+    <div id="eventsContainer" class="events-container"></div>
+  </section>
+
+  <footer>
+    <p>Created by: <strong>Anushka Dubey</strong> | Reg No: <strong>23BCE11492</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
